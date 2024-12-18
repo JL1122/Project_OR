@@ -21,4 +21,6 @@ selected_category = st.sidebar.selectbox("選擇科別", list(options.keys()))
 # 第二個下拉選單: 顯示相對應選項
 if selected_category:
     selected_item = st.sidebar.selectbox("術 式", options[selected_category])
-    # st.write(f"您選擇了: {selected_category} - {selected_item}")
+
+    
+st.write(f"#### 術式: {selected_item}")
